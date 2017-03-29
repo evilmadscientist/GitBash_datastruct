@@ -103,15 +103,15 @@ read age
 
 if [$age -lt 13] # note that you're reading a variable here. First conditional
 then # indicates the code that you'll run if the above condition is true
-echo You're in elementary or middle school.
+echo You are in elementary or middle school.
 elif [$age -ge 13 -o $age -le 18]
 then
-echo You're in high school.
+echo You are in high school.
 elif [$age -gt 18 -o $age -le 23]
 then
-echo You're in college.
+echo You are in college.
 else
-echo You're an adult!
+echo You are an adult! (or are you?)
 fi # indicates the end of the if block
 ~~~~
 
