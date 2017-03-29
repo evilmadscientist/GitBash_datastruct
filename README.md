@@ -79,7 +79,7 @@ expr "5 + 4" # prints 5 + 4, quotation marks indicate that this is to be interpr
 a=$( expr 10 - 3 ) # should set the value of a to 7
 ~~~~
 For more advanced BASH scripts, if, for, and while loops are supported. The if loop takes in a binary condition (e.g. is 5 greater than 4?), and executes code if the condition is true. BASH also supports 'else if' statements if additional conditions are to be evaluated. = and != work similar to other programming languages, but BASH has special keywords to evaluate numbers and files.
-
+~~~~
 -gt: Greater than
 (($a > $b)): a is greater than b
 -lt: Less than
@@ -93,7 +93,7 @@ For more advanced BASH scripts, if, for, and while loops are supported. The if l
  
 -a: Logical and
 -o: Logical or
- 
+~~~~ 
 It's important to note that the = symbol literally compares strings. Thus, it's not used for determining if numbers are equal.
  
 To cut to the chase, a sample if statement is here.
